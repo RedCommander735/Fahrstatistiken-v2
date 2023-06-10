@@ -14,6 +14,6 @@
  * limitations under the License.
  */
 
-package com.example.inventory.data
+package de.redcommander.fahrstatistik.data
 
 class OfflineItemsRepository : ItemsRepository

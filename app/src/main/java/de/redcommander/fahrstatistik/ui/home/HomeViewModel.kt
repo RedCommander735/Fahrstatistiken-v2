@@ -14,10 +14,10 @@
  * limitations under the License.
  */
 
-package com.example.inventory.ui.home
+package de.redcommander.fahrstatistik.ui.home
 
 import androidx.lifecycle.ViewModel
-import com.example.inventory.data.Item
+import de.redcommander.fahrstatistik.data.Item
 
 /**
  * View Model to retrieve all items in the Room database.

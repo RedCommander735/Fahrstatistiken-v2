@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.example.inventory.ui
+package de.redcommander.fahrstatistik.ui
 
 import android.app.Application
 import androidx.lifecycle.ViewModelProvider.AndroidViewModelFactory
@@ -22,11 +22,11 @@ import androidx.lifecycle.createSavedStateHandle
 import androidx.lifecycle.viewmodel.CreationExtras
 import androidx.lifecycle.viewmodel.initializer
 import androidx.lifecycle.viewmodel.viewModelFactory
-import com.example.inventory.InventoryApplication
-import com.example.inventory.ui.home.HomeViewModel
-import com.example.inventory.ui.item.ItemDetailsViewModel
-import com.example.inventory.ui.item.ItemEditViewModel
-import com.example.inventory.ui.item.ItemEntryViewModel
+import de.redcommander.fahrstatistik.InventoryApplication
+import de.redcommander.fahrstatistik.ui.home.HomeViewModel
+import de.redcommander.fahrstatistik.ui.item.ItemDetailsViewModel
+import de.redcommander.fahrstatistik.ui.item.ItemEditViewModel
+import de.redcommander.fahrstatistik.ui.item.ItemEntryViewModel
 
 /**
  * Provides Factory to create instance of ViewModel for the entire Inventory app

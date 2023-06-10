@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.example.inventory.ui.item
+package de.redcommander.fahrstatistik.ui.item
 
 import androidx.annotation.StringRes
 import androidx.compose.foundation.layout.Arrangement
@@ -31,6 +31,7 @@ import androidx.compose.material3.AlertDialog
 import androidx.compose.material3.Button
 import androidx.compose.material3.Card
 import androidx.compose.material3.CardDefaults
+import androidx.compose.material3.ExperimentalMaterial3Api
 import androidx.compose.material3.FloatingActionButton
 import androidx.compose.material3.Icon
 import androidx.compose.material3.MaterialTheme
@@ -48,11 +49,11 @@ import androidx.compose.ui.res.dimensionResource
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.tooling.preview.Preview
-import com.example.inventory.InventoryTopAppBar
-import com.example.inventory.R
-import com.example.inventory.data.Item
-import com.example.inventory.ui.navigation.NavigationDestination
-import com.example.inventory.ui.theme.InventoryTheme
+import de.redcommander.fahrstatistik.InventoryTopAppBar
+import de.redcommander.fahrstatistik.data.Item
+import de.redcommander.fahrstatistik.ui.navigation.NavigationDestination
+import de.redcommander.fahrstatistik.ui.theme.InventoryTheme
+import de.redcommander.fahrstatistikenv2.R
 
 object ItemDetailsDestination : NavigationDestination {
     override val route = "item_details"
@@ -61,6 +62,7 @@ object ItemDetailsDestination : NavigationDestination {
     val routeWithArgs = "$route/{$itemIdArg}"
 }
 
+@OptIn(ExperimentalMaterial3Api::class)
 @Composable
 fun ItemDetailsScreen(
     navigateToEditItem: (Int) -> Unit,

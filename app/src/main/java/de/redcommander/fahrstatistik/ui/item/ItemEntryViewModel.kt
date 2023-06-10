@@ -14,13 +14,13 @@
  * limitations under the License.
  */
 
-package com.example.inventory.ui.item
+package de.redcommander.fahrstatistik.ui.item
 
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.setValue
 import androidx.lifecycle.ViewModel
-import com.example.inventory.data.Item
+import de.redcommander.fahrstatistik.data.Item
 import java.text.NumberFormat
 
 /**

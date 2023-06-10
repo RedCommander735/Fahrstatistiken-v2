@@ -14,11 +14,11 @@
  * limitations under the License.
  */
 
-package com.example.inventory
+package de.redcommander.fahrstatistik
 
 import android.app.Application
-import com.example.inventory.data.AppContainer
-import com.example.inventory.data.AppDataContainer
+import de.redcommander.fahrstatistik.data.AppContainer
+import de.redcommander.fahrstatistik.data.AppDataContainer
 
 class InventoryApplication : Application() {
 

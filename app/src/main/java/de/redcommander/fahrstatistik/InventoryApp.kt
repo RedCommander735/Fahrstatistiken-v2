@@ -14,12 +14,13 @@
  * limitations under the License.
  */
 
-package com.example.inventory
+package de.redcommander.fahrstatistik
 
 import android.annotation.SuppressLint
 import androidx.compose.material.icons.Icons.Filled
 import androidx.compose.material.icons.filled.ArrowBack
 import androidx.compose.material3.CenterAlignedTopAppBar
+import androidx.compose.material3.ExperimentalMaterial3Api
 import androidx.compose.material3.Icon
 import androidx.compose.material3.IconButton
 import androidx.compose.material3.Text
@@ -29,8 +30,8 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.res.stringResource
 import androidx.navigation.NavHostController
 import androidx.navigation.compose.rememberNavController
-import com.example.inventory.R.string
-import com.example.inventory.ui.navigation.InventoryNavHost
+import de.redcommander.fahrstatistik.ui.navigation.InventoryNavHost
+import de.redcommander.fahrstatistikenv2.R.string
 
 /**
  * Top level composable that represents screens for the application.
@@ -44,6 +45,7 @@ fun InventoryApp(navController: NavHostController = rememberNavController()) {
 /**
  * App bar to display title and conditionally display the back navigation.
  */
+@OptIn(ExperimentalMaterial3Api::class)
 @Composable
 fun InventoryTopAppBar(
     title: String,

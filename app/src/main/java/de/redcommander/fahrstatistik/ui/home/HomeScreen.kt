@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.example.inventory.ui.home
+package de.redcommander.fahrstatistik.ui.home
 
 import android.annotation.SuppressLint
 import androidx.compose.foundation.clickable
@@ -31,6 +31,7 @@ import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.Add
 import androidx.compose.material3.Card
 import androidx.compose.material3.CardDefaults
+import androidx.compose.material3.ExperimentalMaterial3Api
 import androidx.compose.material3.FloatingActionButton
 import androidx.compose.material3.Icon
 import androidx.compose.material3.MaterialTheme
@@ -46,12 +47,12 @@ import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
-import com.example.inventory.InventoryTopAppBar
-import com.example.inventory.R
-import com.example.inventory.data.Item
-import com.example.inventory.ui.item.formatedPrice
-import com.example.inventory.ui.navigation.NavigationDestination
-import com.example.inventory.ui.theme.InventoryTheme
+import de.redcommander.fahrstatistik.InventoryTopAppBar
+import de.redcommander.fahrstatistik.data.Item
+import de.redcommander.fahrstatistik.ui.item.formatedPrice
+import de.redcommander.fahrstatistik.ui.navigation.NavigationDestination
+import de.redcommander.fahrstatistik.ui.theme.InventoryTheme
+import de.redcommander.fahrstatistikenv2.R
 
 object HomeDestination : NavigationDestination {
     override val route = "home"
@@ -61,6 +62,7 @@ object HomeDestination : NavigationDestination {
 /**
  * Entry route for Home screen
  */
+@OptIn(ExperimentalMaterial3Api::class)
 @SuppressLint("UnusedMaterial3ScaffoldPaddingParameter")
 @Composable
 fun HomeScreen(

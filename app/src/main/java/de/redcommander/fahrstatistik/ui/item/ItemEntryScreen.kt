@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.example.inventory.ui.item
+package de.redcommander.fahrstatistik.ui.item
 
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
@@ -24,6 +24,7 @@ import androidx.compose.foundation.rememberScrollState
 import androidx.compose.foundation.text.KeyboardOptions
 import androidx.compose.foundation.verticalScroll
 import androidx.compose.material3.Button
+import androidx.compose.material3.ExperimentalMaterial3Api
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.OutlinedTextField
 import androidx.compose.material3.Scaffold
@@ -36,11 +37,11 @@ import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.input.KeyboardType
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.lifecycle.viewmodel.compose.viewModel
-import com.example.inventory.InventoryTopAppBar
-import com.example.inventory.R
-import com.example.inventory.ui.AppViewModelProvider
-import com.example.inventory.ui.navigation.NavigationDestination
-import com.example.inventory.ui.theme.InventoryTheme
+import de.redcommander.fahrstatistik.InventoryTopAppBar
+import de.redcommander.fahrstatistik.ui.AppViewModelProvider
+import de.redcommander.fahrstatistik.ui.navigation.NavigationDestination
+import de.redcommander.fahrstatistik.ui.theme.InventoryTheme
+import de.redcommander.fahrstatistikenv2.R
 import java.util.Currency
 import java.util.Locale
 
@@ -49,6 +50,7 @@ object ItemEntryDestination : NavigationDestination {
     override val titleRes = R.string.item_entry_title
 }
 
+@OptIn(ExperimentalMaterial3Api::class)
 @Composable
 fun ItemEntryScreen(
     navigateBack: () -> Unit,
@@ -104,6 +106,7 @@ fun ItemEntryBody(
     }
 }
 
+@OptIn(ExperimentalMaterial3Api::class)
 @Composable
 fun ItemInputForm(
     itemDetails: ItemDetails,
